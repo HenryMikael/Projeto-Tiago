@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Sidebar } from './sidebar';
+import { AcervoComponents } from './acervo-components';
 
-describe('Sidebar', () => {
-  let component: Sidebar;
-  let fixture: ComponentFixture<Sidebar>;
+describe('AcervoComponents', () => {
+  let component: AcervoComponents;
+  let fixture: ComponentFixture<AcervoComponents>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Sidebar]
+      imports: [AcervoComponents]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Sidebar);
+    fixture = TestBed.createComponent(AcervoComponents);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

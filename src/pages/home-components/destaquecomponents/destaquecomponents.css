@@ -1,0 +1,37 @@
+.destaques-container {
+  width: 100%;
+  background-image: url('/assets/bg-livros.jpg'); /* use a imagem da estante */
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  width: 90%;
+  text-align: left;
+  color: white;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.livros {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.livro-card img {
+  height: 220px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s;
+}
+
+.livro-card img:hover {
+  transform: scale(1.05);
+}
