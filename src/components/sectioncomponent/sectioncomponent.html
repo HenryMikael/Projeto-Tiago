@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="cards-container">
   <div *ngFor="let image of images; let i = index" class="card">
     <div class="card-img-container">
@@ -7,4 +8,15 @@
       <p class="card-text">{{descriptions[i]}}</p>
     </div>
   </div>
+=======
+<div> 
+  <section>
+    <div *ngFor="let image of images; let i = index">
+        <img [src]="image" alt="Card Image"/>
+        <p>
+          {{descriptions[i]}}
+        </p>
+    </div>
+  </section>
+>>>>>>> cdf1d6b973ee7f70d4fb6ae033d3d13477d47d73
 </div>
