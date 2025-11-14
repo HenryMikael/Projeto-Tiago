@@ -1,0 +1,77 @@
+.login-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-title h1 {
+    color: #172635;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #172635;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-grupo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-grupo input:focus {
+    outline: none;
+    border-color: #b88768;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #b88768;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #a56a4a;
+}
+
+.forgot-senha {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-senha a {
+    color: #b88768;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-senha a:hover {
+    text-decoration: underline;
+}

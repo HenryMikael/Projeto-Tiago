@@ -1,0 +1,70 @@
+.footerPage {
+  background-color: #4371C5;
+  color: #c9d1d9;
+  padding: 20px;
+  margin: 0;
+  text-align: underline;
+}
+h3{
+  font-family: 'Inter', sans-serif;
+  font-weight: 50px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.social-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.social-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c9d1d9;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 18px;
+  transition: all 0.4s ease-in-out;
+  letter-spacing: 1px;
+}
+
+li:not(:last-child){
+border-right: 1px solid #fff;
+}
+
+#github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c9d1d9;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 18px;
+  transition: all 0.4s ease-in-out;
+}
+
+#github:hover {
+  transform: translateY(-2px);
+  color: #FFDB4A;
+}
+
+.social-box:hover {
+  transform: translateY(-2px);
+  color: #FFDB4A;
+}
+
+.social-box:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.fa-brands fa-linkedin {
+  color: #0a66c2;
+  width: 20px;
+  padding: 20px;
+}

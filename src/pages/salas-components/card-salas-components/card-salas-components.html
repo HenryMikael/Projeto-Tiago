@@ -1,0 +1,15 @@
+<img
+  src="/assets/images/imagem-fundo.png"
+  alt="Imagem de fundo da página salas"
+  class="full-width"
+/>
+<div class="container">
+  <div class="card" *ngFor="let sala of salas">
+    <img src="/assets/images/salas.png" alt="salas" class="card-image" />
+    <h2>{{ sala.nome }}</h2>
+    <p>capacidade: {{ sala.capacidade }} pessoas</p>
+    <button (click)="changeColorButton(sala)" [style.backgroundColor]="sala.btnColor">
+      {{ sala.btnText }}
+    </button>
+  </div>
+</div>
