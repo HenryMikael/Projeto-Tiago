@@ -12,7 +12,7 @@ export class Inputscomponent {
   private router = inject(Router); 
 
   fazerLogin() {
-    console.log('Botão clicado, navegando para home...'); 
+    console.log('git fetch originnavegando para home...'); 
     this.router.navigate(['/home']);
   }
 }
