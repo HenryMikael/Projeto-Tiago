@@ -1,0 +1,101 @@
+#title{
+    margin-top: 51px;
+    height: 29px;
+    margin-left: 152px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    position: absolute; 
+    cursor: default; 
+}
+
+#anchorLogo{
+    cursor: default;
+    transition: all 0.5s ease-in-out;
+}
+
+#imgLogo{
+    border-radius: 5rem;
+    width: 105px;
+    height: 105px;
+    margin-top: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    transform: scale(1.0);
+}
+
+.navBar{
+    background-color: #4371C5;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px 2px #4371C5;
+}
+
+.links{
+    margin-top: 59px;
+    margin-right: 90px;
+    height: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style: none;
+    font-weight: 400;
+}
+
+.anchor{
+    color: #fff;
+    transition:0.6s ease-in-out;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.anchor:hover{
+    color: #FFDB4A;
+}
+
+
+
+/* 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #172635;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .nav-logo h3 {
+    color: white;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+  }
+
+  .nav-links a:hover {
+    color: #B88768;
+  }
+  .ativo {
+    font-weight: bold;
+  } */
