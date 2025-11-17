@@ -44,29 +44,17 @@
     gap: 35px;
     list-style: none;
     font-weight: 400;
+    
 }
 
 .anchor{
     color: #fff;
     transition:0.6s ease-in-out;
-    font-size: 21px;
+    font-size: 25px;
     text-decoration: none;
 }
 
 .anchor:hover{
-    color: #00FFFB;
-}
-.links img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: #fff;
-  border: 1px solid #000000;
-  transition: all 0.3s ease;
-}
-.links a:hover img {
-  transform: scale(1.1);
     color: #00FFFB;
 }
 

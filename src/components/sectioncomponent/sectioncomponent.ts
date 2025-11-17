@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-sectioncomponent',
   imports: [CommonModule],
@@ -23,7 +24,7 @@ export class Sectioncomponent {
   ];
 
   @Input() descriptions: string[] = [
-   'A OdisseiaAutor: Homero Publicado em IX ou VIII a.C',
+   'A Odisseia Autor: Homero Publicado em IX ou VIII a.C',
    'A Divina comédia Autor: Dante Publicado em 1321',
    'A Divina comédia Autor: Dante Publicado em 1321',
    'A Divina comédia Autor: Dante Publicado em 1321',
