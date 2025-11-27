@@ -1,0 +1,78 @@
+<!-- ...existing code... -->
+<!-- Botão flutuante para abrir o chat -->
+<button 
+  *ngIf="!isChatOpen"
+  class="chat-toggle-btn"
+  (click)="toggleChat()"
+  aria-label="Abrir chat">
+  <span class="chat-icon">💬</span>
+  <span class="notification-dot" *ngIf="messages().length > 0"></span>
+</button>
+
+<!-- Container do Chat -->
+<div *ngIf="isChatOpen" class="chat-container">
+  <!-- Cabeçalho -->
+  <div class="chat-header">
+    <div class="header-info">
+      <div class="bot-avatar">🤖</div>
+      <div>
+        <h3>Falaro Assistente</h3>
+        <span class="status">Online</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="header-btn" (click)="clearChat()" title="Limpar conversa">
+        🗑️
+      </button>
+      <button class="header-btn close-btn" (click)="toggleChat()" title="Fechar">
+        ×
+      </button>
+    </div>
+  </div>
+
+  <!-- Área de mensagens -->
+  <div #chatContainer class="chat-messages">
+    <div *ngFor="let message of messages(); let i = index" [class]="'message ' + message.sender + '-message'">
+      <div class="message-content">
+        {{ message.text }}
+      </div>
+      <div class="message-time">
+        {{ message.timestamp | date:'HH:mm' }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Sugestões de perguntas -->
+  <div *ngIf="messages().length <= 2" class="suggestions">
+    <p>Perguntas frequentes:</p>
+    <div class="suggestion-chips">
+      <button 
+        class="suggestion-chip"
+        *ngFor="let question of suggestedQuestions()"
+        (click)="sendSuggestedQuestion(question)">
+        {{ question }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Área de input -->
+  <div class="chat-input-container">
+    <input
+      type="text"
+      [(ngModel)]="userInput"
+      (keypress)="onKeyPress($event)"
+      placeholder="Digite sua mensagem..."
+      class="chat-input"
+      maxlength="500"
+      #messageInput>
+    
+    <button 
+      (click)="sendMessage()"
+      [disabled]="!userInput.trim()"
+      class="send-btn"
+      title="Enviar mensagem">
+      ➤
+    </button>
+  </div>
+</div>
+<!-- ...existing code... -->
