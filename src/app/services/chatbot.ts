@@ -51,16 +51,16 @@ export class ChatbotService {
     }
 
     const message = userMessage.toLowerCase().trim();
-    console.log('🔍 ANALISANDO MENSAGEM:', message);
+    // ANALISANDO MENSAGEM
 
     // Procura por palavras individuais na mensagem
     const palavras = message.split(/\s+/);
-    console.log('📝 PALAVRAS SEPARADAS:', palavras);
+    // PALAVRAS SEPARADAS
 
     // Primeiro: procura por correspondências exatas de frases
     for (const [key, response] of Object.entries(this.responses)) {
       if (message === key) {
-        console.log('✅ CORRESPONDÊNCIA EXATA:', key);
+        // CORRESPONDÊNCIA EXATA
         return response;
       }
     }
@@ -69,7 +69,7 @@ export class ChatbotService {
     for (const palavra of palavras) {
       for (const [key, response] of Object.entries(this.responses)) {
         if (key.includes(palavra) || palavra.includes(key)) {
-          console.log('✅ PALAVRA ENCONTRADA:', palavra, 'na chave:', key);
+          // PALAVRA ENCONTRADA
           return response;
         }
       }
@@ -78,13 +78,13 @@ export class ChatbotService {
     // Terceiro: procura por partes das chaves na mensagem completa
     for (const [key, response] of Object.entries(this.responses)) {
       if (message.includes(key)) {
-        console.log('✅ CHAVE ENCONTRADA NA MENSAGEM:', key);
+        // CHAVE ENCONTRADA NA MENSAGEM
         return response;
       }
     }
 
-    console.log('❌ NENHUMA RESPOSTA ENCONTRADA');
-    return 'Desculpe, não entendi. Pode reformular? Posso ajudar com: horários, contato, livros, suporte e planos.';
+    // NENHUMA RESPOSTA ENCONTRADA
+    return 'Desculpe, não entendi. Pode reformular? Posso ajudar com: horários, contato, livros, suporte.';
   }
 
   addMessage(messages: ChatMessage[], text: string, sender: 'user' | 'bot'): ChatMessage[] {

@@ -1,5 +1,3 @@
-
-
 .chat-toggle-btn {
   position: fixed;
   bottom: 20px;
@@ -76,6 +74,20 @@ img {
 
 .close-btn:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bot-avatar {
+  font-size: 24px; /* Tamanho do emoji/avatar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 /* Área de mensagens */
