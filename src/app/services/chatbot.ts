@@ -11,12 +11,6 @@ export interface ChatMessage {
 })
 export class ChatbotService {
   private responses = {
-    //comprimentos
-    'oi':'Olá! Seja bem-vindo(a) à Biblioteca Online! Como posso ajudar?',
-    'olá': 'Oi! Bem-vindo(a) à nossa biblioteca virtual!',
-    'ola': 'Oi! Bem-vindo(a) à nossa biblioteca virtual!',
-    'e aí': 'E aí! Procurando algum livro hoje?',
-
     //infos
     'horario': 'Nossa biblioteca online funciona 24 horas por dia, todos os dias!',
     'horário': 'Nossa biblioteca online funciona 24 horas por dia, todos os dias!',
@@ -28,9 +22,9 @@ export class ChatbotService {
     'email': 'Você pode nos contatar pelo email: suporte@biblioteca.com',
 
     //livros e serviços
-    'produtos': 'Disponibilizamos empréstimo digital, leitura online e recomendações personalizadas!',
-    'serviços': 'Disponibilizamos empréstimo digital, leitura online e recomendações personalizadas!',
-    'servicos': 'Disponibilizamos empréstimo digital, leitura online e recomendações personalizadas!',
+    'produtos': 'Disponibilizamos reserva de salas, leitura online e recomendações personalizadas!',
+    'serviços': 'Disponibilizamos reserva de salas, leitura online e recomendações personalizadas!',
+    'servicos': 'Disponibilizamos reserva de salas, leitura online e recomendações personalizadas!',
     'preços': 'O acesso aos livros depende do plano. Deseja saber mais sobre assinaturas?',
     'precos': 'O acesso aos livros depende do plano. Deseja saber mais sobre assinaturas?',
     
@@ -41,7 +35,13 @@ export class ChatbotService {
     //despedida
     'tchau': 'Até logo! Boa leitura',
     'obrigado': 'De nada! Boa leitura!',
-    'obrigada': 'Por nada! Aproveite sua leitura!'
+    'obrigada': 'Por nada! Aproveite sua leitura!',
+
+    //comprimentos
+    'oi':'Olá! Seja bem-vindo(a) à Biblioteca Online! Como posso ajudar?',
+    'olá': 'Oi! Bem-vindo(a) à nossa biblioteca virtual!',
+    'ola': 'Oi! Bem-vindo(a) à nossa biblioteca virtual!',
+    'e aí': 'E aí! Procurando algum livro hoje?',
   };
 
 

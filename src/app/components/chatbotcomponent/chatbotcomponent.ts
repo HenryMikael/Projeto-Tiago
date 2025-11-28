@@ -20,7 +20,7 @@ export class ChatbotComponent implements OnInit {
   suggestedQuestions = signal([
     'qual o horario de funcionamento?',
     'Como posso entrar em contato?',
-    'Quais produtos vocês oferecem?',
+    'Quais serviços vocês oferecem?',
     'Preciso de suporte técnico'
   ]);
 

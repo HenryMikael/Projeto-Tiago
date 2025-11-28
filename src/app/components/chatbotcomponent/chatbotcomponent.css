@@ -1,3 +1,5 @@
+
+
 .chat-toggle-btn {
   position: fixed;
   bottom: 20px;
@@ -13,6 +15,11 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: all 0.3s ease;
+}
+img {
+  height: 40px;
+  width: 40px;
+  margin-left: 3px;
 }
 
 .chat-toggle-btn:hover {
@@ -207,15 +214,4 @@
 .send-btn:disabled {
   background: #ccc;
   cursor: not-allowed;
-}
-
-/* Responsivo */
-@media (max-width: 480px) {
-  .chat-container {
-    width: calc(100vw - 40px);
-    height: calc(100vh - 100px);
-    bottom: 10px;
-    right: 10px;
-    left: 10px;
-  }
 }

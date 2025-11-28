@@ -1,11 +1,10 @@
-<!-- ...existing code... -->
-<!-- Botão flutuante para abrir o chat -->
+<!-- Botão flutuante -->
 <button 
   *ngIf="!isChatOpen"
   class="chat-toggle-btn"
   (click)="toggleChat()"
   aria-label="Abrir chat">
-  <span class="chat-icon">💬</span>
+  <img src="/assets/images/eva3.png" alt="robot">
   <span class="notification-dot" *ngIf="messages().length > 0"></span>
 </button>
 
@@ -14,9 +13,8 @@
   <!-- Cabeçalho -->
   <div class="chat-header">
     <div class="header-info">
-      <div class="bot-avatar">🤖</div>
       <div>
-        <h3>Falaro Assistente</h3>
+        <h3>Assistente</h3>
         <span class="status">Online</span>
       </div>
     </div>
@@ -75,4 +73,3 @@
     </button>
   </div>
 </div>
-<!-- ...existing code... -->
