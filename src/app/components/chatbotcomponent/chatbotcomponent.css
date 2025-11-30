@@ -15,9 +15,9 @@
   transition: all 0.3s ease;
 }
 img {
-  height: 40px;
-  width: 40px;
-  margin-left: 3px;
+  height: 60px;
+  width: 60px;
+  margin-left: 2px;
 }
 
 .chat-toggle-btn:hover {

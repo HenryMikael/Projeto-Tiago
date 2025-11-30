@@ -4,7 +4,7 @@ import { Footer } from '../../app/components/footer/footer';
 import { Maincomponent } from '../../app/components/maincomponent/maincomponent';
 import { Servicescomponent } from '../../app/components/servicescomponent/servicescomponent';
 import { Eventcomponent } from '../../app/components/eventcomponent/eventcomponent';
-import { ChatbotComponent } from "../../app/components/chatbotcomponent/chatbotcomponent";
+import { ChatbotComponent } from '../../app/components/chatbotcomponent/chatbotcomponent';
 
 @Component({
   selector: 'app-home-components',
