@@ -4,6 +4,7 @@
   padding: 20px;
   margin: 0;
   text-align: underline;
+  box-shadow: 1px 1px 2px 2px #4371C5;
 }
 h3{
   font-family: 'Inter', sans-serif;

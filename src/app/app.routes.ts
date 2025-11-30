@@ -5,14 +5,16 @@ import { AcervoComponents } from '../pages/acervo/acervo';
 import { LoginScreen } from '../pages/login-screen/login-screen';
 import { Registercomponent } from '../components/registercomponent/registercomponent';
 import { Perfilcomponent } from '../components/perfilcomponent/perfilcomponent';
+import { Inicio } from '../pages/inicio/inicio';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'login-screen', pathMatch: 'full' },
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
   { path: 'login-screen' , component: LoginScreen},
   { path: 'home', component: HomeComponents},
   { path: 'salas', component: SalasComponents },
   { path: 'acervo', component: AcervoComponents },
   { path: 'register', component: Registercomponent },
   { path: 'login', component: LoginScreen },
-  { path: 'perfil', component: Perfilcomponent}
+  { path: 'perfil', component: Perfilcomponent},
+  { path: 'inicio', component: Inicio}
 ];

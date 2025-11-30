@@ -1,6 +1,7 @@
 .servicos {
     padding: 60px 0;
     text-align: center;
+    cursor: default;
 }
 
 .servicos h2 {

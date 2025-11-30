@@ -29,10 +29,11 @@ export class CardSalasComponents {
     { id: 9, nome: 'sala 9', capacidade: 8, btnColor: '#007bff', btnText: 'Reservar' },
   ];
 
+
   changeColorButton(sala: Sala) {
      if (sala.btnText === 'Reservar') {
-      sala.btnColor = '#12C915';
-      sala.btnText = 'Reservado';
+      sala.btnColor = '#c91212ff';
+      sala.btnText = 'Cancelar Reserva';
       
       Swal.fire({
         title: 'Sucesso',
@@ -40,11 +41,13 @@ export class CardSalasComponents {
         icon: 'success',
         confirmButtonText: 'OK'
       });
-    } else {
+    } else if (sala.btnText === 'Cancelar Reserva') {
+      sala.btnColor = '#007bff';
+      sala.btnText = 'Reservar';
       Swal.fire({
-        title: 'Aviso',
-        text: 'Sala já está reservada!',
-        icon: 'warning',
+        title: 'Sucesso',
+        text: 'Reserva cancelada!',
+        icon: 'success',
         confirmButtonText: 'OK'
       });
     }
