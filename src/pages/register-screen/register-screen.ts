@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Registercomponent } from '../../components/registercomponent/registercomponent';
+import { Registercomponent } from '../../app/components/registercomponent/registercomponent';
+
 
 @Component({
   selector: 'app-register-screen',

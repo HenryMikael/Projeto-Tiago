@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { Navbar } from "../../components/navbar/navbar";
-import { Sectioncomponent } from "../../components/sectioncomponent/sectioncomponent";
-import { Footer } from '../../components/footer/footer';
+import { Navbar } from '../../app/components/navbar/navbar';
+import { Sectioncomponent } from '../../app/components/sectioncomponent/sectioncomponent';
+import { Footer } from '../../app/components/footer/footer';
+
 
 @Component({
   selector: 'app-acervo',

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CardSalasComponents } from "./card-salas-components/card-salas-components";
-import { Navbar } from "../../components/navbar/navbar";
-import { Footer } from "../../components/footer/footer";
+import { Navbar } from '../../app/components/navbar/navbar';
+import { Footer } from '../../app/components/footer/footer';
+
 
 @Component({
   selector: 'app-salas-components',

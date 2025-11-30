@@ -3,8 +3,8 @@ import { HomeComponents } from '../pages/home-components/home';
 import { SalasComponents } from '../pages/salas-components/salas-components';
 import { AcervoComponents } from '../pages/acervo/acervo';
 import { LoginScreen } from '../pages/login-screen/login-screen';
-import { Registercomponent } from '../components/registercomponent/registercomponent';
-import { Perfilcomponent } from '../components/perfilcomponent/perfilcomponent';
+import { Registercomponent } from './components/registercomponent/registercomponent';
+import { Perfilcomponent } from './components/perfilcomponent/perfilcomponent';
 import { Inicio } from '../pages/inicio/inicio';
 
 export const routes: Routes = [
